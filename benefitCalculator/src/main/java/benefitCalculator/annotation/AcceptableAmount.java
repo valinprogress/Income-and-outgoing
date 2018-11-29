@@ -15,7 +15,7 @@ import benefitCalculator.validation.AcceptableAmountValidator;
 @Constraint(validatedBy = AcceptableAmountValidator.class)
 public @interface AcceptableAmount {
 
-  String message() default "The monetary amount is not correct";
+  String message() default "";
   
   Class<?>[] groups() default {};
 
