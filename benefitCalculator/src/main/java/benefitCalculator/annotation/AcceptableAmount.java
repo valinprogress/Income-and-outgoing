@@ -13,6 +13,9 @@ import benefitCalculator.validation.AcceptableAmountValidator;
 @Target( { ElementType.METHOD, ElementType.TYPE, ElementType.FIELD, ElementType.ANNOTATION_TYPE })
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = AcceptableAmountValidator.class)
+/**
+Validates the amount and the frequency of the benefit instalments being correctly given 
+**/
 public @interface AcceptableAmount {
 
   String message() default "";
