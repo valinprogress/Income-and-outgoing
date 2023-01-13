@@ -81,7 +81,7 @@ public class AcceptableAmountValidator implements ConstraintValidator<Acceptable
 		return isValid;
 	}
 
-	private boolean isValidFourWeeksAmount(RegularAmount regularAmount) {
+	private boolean isValidFourWeeklyAmount(RegularAmount regularAmount) {
 		boolean isValid = false;
 		
 		if(Double.parseDouble(regularAmount.getAmount()) % 4 == 0){
