@@ -39,7 +39,7 @@ public class AcceptableAmountValidator implements ConstraintValidator<Acceptable
 			result = isValidBiWeeklyAmount(regularAmount);
 			break;
 		case FOUR_WEEK :
-			result = isValidFourWeeksAmount(regularAmount);
+			result = isValidFourWeeklyAmount(regularAmount);
 			break;
 		case QUARTER : 
 			result = isValidQuarterlyAmount(regularAmount);
